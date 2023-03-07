@@ -1,0 +1,420 @@
+/* @import url('./Fonts/Agrandir-Regular.otf'); */
+@font-face {
+    font-family: 'agrandir';
+    src:url('./Fonts/Agrandir-Regular.otf') format("truetype");
+}
+body{
+    margin: 0;
+    padding: 0;
+   
+    color: #727124;
+    font-size: 20px;
+    font-family: 'agrandir', regular;
+}
+
+
+/****************             LOADER           *****************/
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 218, 218);
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 7px solid rgba(114, 113, 36, 0.3) ;
+    border-top-color:  #727124;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.navbarStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(114, 113, 36, 0.3);
+    border: 1px dotted #727124;
+    
+}
+
+.navbar{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container-all{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.logoAmbulante{
+    width: 30vw;
+    height: 50%;
+    
+}
+
+.posLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion-style{
+    color: #727124;
+    font-size: 25px;
+    font-weight: bold;
+    
+    
+}
+
+.container{
+    max-width: 100%;   
+}
+
+.conteinerTablas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentTabla{
+    display: flex;
+    width: 80vw;
+}
+
+.texto-presentacion{
+    padding: 100px;
+}
+
+.col-precio{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.col{
+    padding: 30px;
+}
+
+p{
+    margin: 15px;
+}
+
+.div-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.card-style{
+    width: 20vw;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 0.5px solid #727124;
+    border-radius: 1.5px;
+    background-color: rgba(114, 113, 36, 0.1);
+   
+}
+
+.card-text{
+    font-size: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(114, 113, 36, 0.9);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.img-pages{
+    width: 15vw;
+}
+
+.img-cards{
+    width: 60w;
+    height: 30vh;
+}
+
+
+
+/** FOOTER **/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(114, 113, 36, 0.3);
+    border: 1px dotted #727124;
+}
+
+
+
+.redes{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 3px;
+        font-size: 15px;
+}
+/** TERMINA FOOTER  ***/
+
+/*********      Clases     *************/
+
+/******* padding  *******/
+ .padd10{
+    padding: 10px;
+ }
+
+ .padd15{
+    padding: 15px;
+ }
+
+ .padd20{
+    padding: 20px;
+ }
+
+ .padd25{
+    padding: 25px;
+ }
+
+ .pos-fixed{
+    position: fixed;
+}
+
+
+
+
+ /************* MEDIA QUERIS    *******************/
+
+
+
+ @media screen and  (max-width: 712px){
+        
+
+        .card-style{
+            width: 30vw;
+            height: 25vh;
+            box-sizing: content-box;
+        }
+
+        .img-cards {
+            height: 15vh;
+            width: 100%;
+        }
+
+        .logoAmbulante {
+            width: 90vw;
+            height: 50%;
+            padding-left: 10px;
+        }
+
+        .div-cards {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .contentTabla {
+            display: flex;
+            width: 100vw;
+            font-size: 15px;
+        }
+
+        .adic-size{
+            font-size: 12px;
+        }
+
+        .footer {
+            margin-top: 20%;
+        }
+ }
+
+ @media screen and (max-width: 423px){
+
+        
+
+        body{
+            width: 100%;
+            height: 100%;
+           
+            
+            min-height: 100vh;
+        }
+
+        .logoAmbulante{
+            width: 90vw;
+        }
+        .card-style{
+            width: 30vw;
+            height: 23vh;
+            box-sizing: content-box;
+           
+        }
+
+        .img-cards{
+            
+                height: 15vh;
+                width: 100%;
+        }
+
+        .img-pages{
+            width: 20vw;
+        }
+
+        .card-body{
+            padding: 0;
+        }
+        .div-cards{
+            padding: 10px;
+        }
+        .titulos{
+            margin: 0;
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .presentacion-style{
+            font-size: 20px;
+        }
+
+        .contentTabla{
+            display: flex;
+            font-size: 14px;
+            width: 100vw;
+            
+        }
+
+        .conteinerTablas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        div.col{
+            width: 100vw;
+            padding-top: 30px;
+        }
+
+        .col-precio{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .adic-size{
+            font-size: 12px;
+        }
+
+        .footer{
+            margin-top: 15%;
+          
+        }
+
+        .pos-fixed{
+            position: fixed;
+        }
+
+
+        .texto-presentacion{
+            padding: 40px;
+            text-align: center;
+        }
+
+        .redes{
+            font-size: 15px;
+        }
+
+        .descripcion-size{
+            font-size: 13px;
+        }
+
+        .loader::after{
+            content: "";
+            width: 75px;
+            height: 75px;
+            border: 5px solid rgba(114, 113, 36, 0.3) ;
+            border-top-color:  #727124;
+            border-radius: 50%;
+            animation: loading 1s ease infinite;
+        }
+ }
+
+ @media screen and (max-width: 380px ){
+    .img-cards{
+        
+        height: 15vh;
+        
+    }
+
+    .presentacion-style {
+        font-size: 15px;
+    }
+    .card-style{
+        width: 30vw;
+        height: 27vh;
+        box-sizing: content-box;
+    }
+
+    .card-text{
+        font-size: 12px;
+    }
+
+    .position-image{
+        position: relative;
+    }
+
+    .container{
+        font-size: 15px;
+    }
+
+    .container{
+        font-size: 10px;
+    }
+    
+ }
