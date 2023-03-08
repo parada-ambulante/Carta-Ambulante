@@ -239,6 +239,7 @@ p{
         .img-cards {
             height: 15vh;
             width: 100%;
+            opacity: 0.9;
         }
 
         .logoAmbulante {
@@ -296,7 +297,7 @@ p{
         }
 
         .img-cards{
-            
+                opacity: 0.9;
                 height: 15vh;
                 width: 100%;
         }
@@ -384,7 +385,7 @@ p{
 
  @media screen and (max-width: 380px ){
     .img-cards{
-        
+        opacity: 0.9;
         height: 15vh;
         
     }
