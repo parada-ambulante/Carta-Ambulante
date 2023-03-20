@@ -107,6 +107,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 50vh;
 }
 
 .contentTabla{
@@ -115,7 +116,7 @@ a{
 }
 
 .texto-presentacion{
-    padding: 100px;
+    padding: 70px;
 }
 
 .col-precio{
@@ -144,10 +145,12 @@ p{
 
 .card-style{
     width: 20vw;
+    height: 50vh;
     margin: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: flex-end;
     padding: 10px;
     border: 0.5px solid #727124;
     border-radius: 1.5px;
@@ -168,12 +171,20 @@ p{
     width: 15vw;
 }
 
+
 .img-cards{
-    width: 60w;
+    
     height: 30vh;
     opacity: 0.9;
 }
 
+
+
+.tostones{
+    width: 10vw;
+    height: 15vh;
+    margin-bottom: 30px;
+}
 
 
 /** FOOTER **/
@@ -185,9 +196,25 @@ p{
     background-color: rgba(114, 113, 36, 0.3);
     border: 1px dotted #727124;
     margin-top: 30px;
+    bottom: 0%;
 }
 
 
+
+.powered{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.colorPowered{
+    color: #727124;
+}
 
 .redes{
     display: flex;
@@ -258,10 +285,22 @@ p{
             align-items: center;
         }
 
+        .img-pages{
+           
+            margin: 15px;
+            
+        }
+
         .contentTabla {
             display: flex;
             width: 100vw;
             font-size: 15px;
+        }
+
+        .tostones{
+            width: 20vw;
+            height: 15vh;
+            margin-left: 8px;
         }
 
         .adic-size{
@@ -272,6 +311,19 @@ p{
             bottom: 0;
             margin-top: 10%;
         }
+ }
+
+
+ @media screen and (max-width: 520px){
+
+
+    .tostones{
+        width: 25vw;
+        height: 9vh;
+        margin-bottom: 20px;
+        margin-left: 8px;
+        
+    }
  }
 
  @media screen and (max-width: 423px){
@@ -304,6 +356,16 @@ p{
 
         .img-pages{
             width: 20vw;
+            margin: 15px;
+            
+        }
+
+        .tostones{
+            width: 25vw;
+            height: 9vh;
+            margin-bottom: 20px;
+            margin-left: 8px;
+            
         }
 
         .card-body{
@@ -335,6 +397,7 @@ p{
             align-items: center;
             padding: 8px;
             font-size: 15px;
+            min-height: 50vh;
         }
 
         div.col{
@@ -355,6 +418,7 @@ p{
 
         .footer{
             margin-top: 15%;
+            bottom: 0%;
           
         }
 
@@ -407,10 +471,13 @@ p{
         position: relative;
     }
 
-    .container{
-        font-size: 15px;
+    .tostones{
+        width: 25vw;
+        height: 10vh;
+        margin-bottom: 20px;
+        margin-left: 8px;
     }
-
+   
     .container{
         font-size: 10px;
     }
